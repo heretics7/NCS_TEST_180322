@@ -15,7 +15,7 @@ function Awsfundata() {
     return(
         <div>
             <h2>함수형 컴포넌트</h2>
-            {myawsdata}
+            <p>{myawsdata}</p>
         </div>
     )
 }

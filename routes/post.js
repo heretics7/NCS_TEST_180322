@@ -3,8 +3,8 @@ var postrouter = express.Router();
 
 postrouter.post('/', (req, res) => {
     res.send({
-        'fun':'function post 연결 성공',
-        'cla':'class post 연결 성공'
+        'fun':'함수형 post 연결 성공',
+        'cla':'클래스형 post 연결 성공'
     });
 })
 
