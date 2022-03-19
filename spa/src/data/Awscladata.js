@@ -5,14 +5,14 @@ class Awscladata extends Component {
     constructor(props){
         super(props)
         this.state = {
-            mygetdata : "초기 DB 값",
-            myawsdata : ""
+            mygetdata : "get 초기 DB 값",
+            myawsdata : "post 초기 DB 값"
         }
     }
     componentDidMount = async () => {
         const getget = await axios.get('/get')
         this.setState({ mygetdata : getget.data})
-        const getaws = await axios.get('/post')
+        const getaws = await axios.post('/post')
         this.setState({ myawsdata : getaws.data.cla})
     }
 
